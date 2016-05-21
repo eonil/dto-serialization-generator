@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45830B091CF004F4002FEA3D /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830B031CF004F4002FEA3D /* Atom.swift */; };
+		45830B0A1CF004F4002FEA3D /* Example1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830B041CF004F4002FEA3D /* Example1.swift */; };
+		45830B0B1CF004F4002FEA3D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830B051CF004F4002FEA3D /* main.swift */; };
+		45830B0C1CF004F4002FEA3D /* parseSymbolicExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830B061CF004F4002FEA3D /* parseSymbolicExpression.swift */; };
+		45830B0D1CF004F4002FEA3D /* runCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830B071CF004F4002FEA3D /* runCommand.swift */; };
+		45830B0E1CF004F4002FEA3D /* SourceFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830B081CF004F4002FEA3D /* SourceFile.swift */; };
+		45830B101CF02D53002FEA3D /* SymbolicExpressionParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45830B0F1CF02D53002FEA3D /* SymbolicExpressionParsingError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45830AF71CF0049E002FEA3D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		45830AF91CF0049E002FEA3D /* edsg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = edsg; sourceTree = BUILT_PRODUCTS_DIR; };
+		45830B031CF004F4002FEA3D /* Atom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atom.swift; sourceTree = "<group>"; };
+		45830B041CF004F4002FEA3D /* Example1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example1.swift; sourceTree = "<group>"; };
+		45830B051CF004F4002FEA3D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		45830B061CF004F4002FEA3D /* parseSymbolicExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseSymbolicExpression.swift; sourceTree = "<group>"; };
+		45830B071CF004F4002FEA3D /* runCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = runCommand.swift; sourceTree = "<group>"; };
+		45830B081CF004F4002FEA3D /* SourceFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceFile.swift; sourceTree = "<group>"; };
+		45830B0F1CF02D53002FEA3D /* SymbolicExpressionParsingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolicExpressionParsingError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45830AF61CF0049E002FEA3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45830AF01CF0049E002FEA3D = {
+			isa = PBXGroup;
+			children = (
+				45830AFB1CF0049E002FEA3D /* DTOSerializationGenerator */,
+				45830AFA1CF0049E002FEA3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45830AFA1CF0049E002FEA3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45830AF91CF0049E002FEA3D /* edsg */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45830AFB1CF0049E002FEA3D /* DTOSerializationGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				45830B041CF004F4002FEA3D /* Example1.swift */,
+				45830B051CF004F4002FEA3D /* main.swift */,
+				45830B031CF004F4002FEA3D /* Atom.swift */,
+				45830B0F1CF02D53002FEA3D /* SymbolicExpressionParsingError.swift */,
+				45830B061CF004F4002FEA3D /* parseSymbolicExpression.swift */,
+				45830B071CF004F4002FEA3D /* runCommand.swift */,
+				45830B081CF004F4002FEA3D /* SourceFile.swift */,
+			);
+			path = DTOSerializationGenerator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45830AF81CF0049E002FEA3D /* DTOSerializationGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45830B001CF0049E002FEA3D /* Build configuration list for PBXNativeTarget "DTOSerializationGenerator" */;
+			buildPhases = (
+				45830AF51CF0049E002FEA3D /* Sources */,
+				45830AF61CF0049E002FEA3D /* Frameworks */,
+				45830AF71CF0049E002FEA3D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DTOSerializationGenerator;
+			productName = DTOSerializationGenerator;
+			productReference = 45830AF91CF0049E002FEA3D /* edsg */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45830AF11CF0049E002FEA3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Eonil;
+				TargetAttributes = {
+					45830AF81CF0049E002FEA3D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 45830AF41CF0049E002FEA3D /* Build configuration list for PBXProject "DTOSerializationGenerator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 45830AF01CF0049E002FEA3D;
+			productRefGroup = 45830AFA1CF0049E002FEA3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45830AF81CF0049E002FEA3D /* DTOSerializationGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45830AF51CF0049E002FEA3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45830B0E1CF004F4002FEA3D /* SourceFile.swift in Sources */,
+				45830B0A1CF004F4002FEA3D /* Example1.swift in Sources */,
+				45830B0D1CF004F4002FEA3D /* runCommand.swift in Sources */,
+				45830B0C1CF004F4002FEA3D /* parseSymbolicExpression.swift in Sources */,
+				45830B101CF02D53002FEA3D /* SymbolicExpressionParsingError.swift in Sources */,
+				45830B091CF004F4002FEA3D /* Atom.swift in Sources */,
+				45830B0B1CF004F4002FEA3D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		45830AFE1CF0049E002FEA3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45830AFF1CF0049E002FEA3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		45830B011CF0049E002FEA3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = edsg;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45830B021CF0049E002FEA3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = edsg;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45830AF41CF0049E002FEA3D /* Build configuration list for PBXProject "DTOSerializationGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45830AFE1CF0049E002FEA3D /* Debug */,
+				45830AFF1CF0049E002FEA3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45830B001CF0049E002FEA3D /* Build configuration list for PBXNativeTarget "DTOSerializationGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45830B011CF0049E002FEA3D /* Debug */,
+				45830B021CF0049E002FEA3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45830AF11CF0049E002FEA3D /* Project object */;
+}

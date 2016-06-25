@@ -136,22 +136,18 @@ private func parseNonPrimitiveTypeExpression(s: String) throws -> TypeID {
     }
     return TypeID.entity(s)
 }
-//private func parseIdentifier(s: String) -> (identifier: String, rest: String) {
-//    var buffer = ""
-//    var rest = s
-//    while s.isEmpty == false {
-//        let (f, t) = rest.splitFirst()
-//        if "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_".characters.contains(f) {
-//            buffer.append(f)
-//            rest = t
-//        }
-//        else {
-//            break
-//        }
-//    }
-//    return (buffer, rest)
-//}
-
+/// - Returns: Non-nil if the string is enclosed by the start and end.
+private func tryStripping(s: String, start: String, end: String) -> (String)? {
+    let b1 = (start == "") || s.hasPrefix(start)
+    let b2 = (end == "") || s.hasSuffix(end)
+    guard b1 && b2 else { return nil }
+    let d1 = start.characters.startIndex.distanceTo(start.characters.endIndex)
+    let d2 = end.characters.startIndex.distanceTo(end.characters.endIndex)
+    let i1 = s.characters.startIndex.advancedBy(+d1)
+    let i2 = s.characters.endIndex.advancedBy(-d2)
+    let s1 = s[i1..<i2]
+    return s1
+}
 private extension String {
     func splitFirst() -> (first: Character, tail: String) {
         guard !isEmpty else { fatalError() }
@@ -204,18 +200,6 @@ private extension Atom {
         let t1 = t.joinWithSeparator("=")
         return (f, t1)
     }
-}
-/// - Returns: Non-nil if the string is enclosed by the start and end.
-private func tryStripping(s: String, start: String, end: String) -> (String)? {
-    let b1 = (start == "") || s.hasPrefix(start)
-    let b2 = (end == "") || s.hasSuffix(end)
-    guard b1 && b2 else { return nil }
-    let d1 = start.characters.startIndex.distanceTo(start.characters.endIndex)
-    let d2 = end.characters.startIndex.distanceTo(end.characters.endIndex)
-    let i1 = s.characters.startIndex.advancedBy(+d1)
-    let i2 = s.characters.endIndex.advancedBy(-d2)
-    let s1 = s[i1..<i2]
-    return s1
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

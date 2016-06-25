@@ -1,5 +1,15 @@
 
 
+To-Do
+-----
+- Decoder generator
+- Type expression parser tuple support.
+
+Done
+----
+- Encoder generator
+- Schema analyzer
+
 
 
 Encoding / Decoding
